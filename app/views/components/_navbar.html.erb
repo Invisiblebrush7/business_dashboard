@@ -1,0 +1,22 @@
+<div class="navbar">
+
+  <div class="left-part-navbar">
+    <i class="fas fa-bars menu-icon"></i>
+    <h1>Dashboard</h1>
+  </div>
+
+  <div class="middle-part-navbar">
+    <%= form_with method: :get do |form| %>
+      <%= form.text_field :query, placeholder: 'Buscar orden', class: 'text-field-input' %>
+      <%= form.submit "Buscar", class: 'submit-btn' %>
+
+    <% end %>
+  </div>
+
+
+  <div class="right-part-navbar">
+    <h3>John Doe</h3>
+    <h4>Admin</h4>
+  </div>
+
+</div>
